@@ -1,7 +1,7 @@
 <template v-loading="loading">
   <div v-if="loading"><i class="el-icon-loading"></i></div>
   <div v-else>
-    <el-table :data="list">
+    <el-table :data="list" empty-text="No files found">
       <el-table-column prop="filename"></el-table-column>
       <el-table-column>
         <template slot-scope="scope">
