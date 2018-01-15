@@ -39,7 +39,8 @@
     created: function(){
       this.loadList();
       var that = this;
-      var socket = io('http://localhost:3000');
+      var host = "http://"+window.location.hostname;
+      var socket = io(host+':3000');
       socket.on("files-channel:files.changed", function(message){
         that.loadList();
       });
