@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <el-row>
-      <el-col :xs="{span: 24, offset: 0}" :span="18" :offset="3">
+      <el-col :xs="{span: 24, offset: 0}" :md="{span: 18, offset: 3}">
         <el-header>
           <el-menu mode="horizontal" :default-active="$route.path" :router="true">
             <template v-for="route in $router.options.routes" v-if="!route.meta.hidden">
